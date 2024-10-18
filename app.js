@@ -137,7 +137,7 @@ return  localStorage.getItem('list')?JSON.parse(localStorage.getItem('list')): [
 
 function setupItems(){
     let items = getLocalStorage();
-    if(items.lengths > 0){
+    if(items.length > 0){
         items.forEach(function(item){
             createListItem(item.id,item.value);
         })
